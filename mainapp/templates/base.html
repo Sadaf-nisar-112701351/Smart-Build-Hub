@@ -1,0 +1,257 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head> 
+
+<body>
+    <div class="container-fluid">
+        <!-- nav start -->
+        <div class="row">
+            <div class="col-sm-12 p-0">
+                <nav class="navbar navbar-expand-lg fixed-top"
+                    style="background-color: hsla(221, 39%, 11%, 0.355); backdrop-filter:blur(10px);">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><img src="{% static 'img/icon.png' %}" class="d-block w-100"
+                                alt="..." height="75px"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-light fw-bold" aria-current="page"
+                                        href="{% url 'index' %}">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light fw-bold" href="{% url 'about' %}">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light fw-bold" href="{% url 'register' %}">Registration</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light fw-bold" href="{% url 'login' %}">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light fw-bold" href="{% url 'contact' %}">Contact Us</a>
+                                </li>
+
+                            </ul>
+
+                           <a href="{% url 'adminlogin' %}"
+   class="btn btn-outline me-5 text-light"
+   style="background-color: #ff6900;">
+   ADMIN
+</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- nav end -->
+
+
+        {% block main %}
+        {% endblock %}
+
+
+        <!-- footer start -->
+        <div class="row">
+            <div class="col-sm-12">
+                <!-- Footer -->
+                <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+                    <!-- Section: Social media -->
+                    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                        <!-- Left -->
+                        <div class="me-5 d-none d-lg-block">
+                            <span >Get connected with us on social networks:</span>
+                        </div>
+                        <!-- Left -->
+                    </section>
+                    <!-- Section: Social media -->
+
+                    <!-- Section: Links  -->
+                    <section class="">
+                        <div class=" text-center text-md-start ">
+                            <!-- Grid row -->
+                            <div class="row ">
+                                <!-- Grid column -->
+                                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto ">
+                                    <!-- Content -->
+                                    <h6 class="text-uppercase fw-bold mt-4">
+                                        <img src="{% static 'img/icon.png' %}" class="d-block" alt="..."
+                                            height="75px"></a>
+                                    </h6>
+                                    <p>
+                                        An innovative digital platform transforming traditional home construction
+                                        methods through seamless collaboration between homeowners, architects,
+                                        contractors, and suppliers.
+
+                                    </p>
+                                    <!-- icon -->
+                                    <div>
+                                        <a href="" class="me-4 text-reset">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                            <i class="fab fa-google"></i>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+
+
+
+                                </div>
+                                <!-- Grid column -->
+
+                                <!-- Grid column -->
+                                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto ">
+                                    <!-- Links -->
+                                    <h6 class="text-uppercase fw-bold mt-4">
+                                        Quick Links
+                                    </h6>
+                                    <p>
+                                        <a href="#!" class="text-reset" style="text-decoration: none;">Home</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset" style="text-decoration: none;">About Us</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset" style="text-decoration: none;">Registration</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset" style="text-decoration: none;">Login</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset" style="text-decoration: none;">Contact</a>
+                                    </p>
+
+                                </div>
+                                <!-- Grid column -->
+
+                                <!-- Grid column -->
+                                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto ">
+                                    <!-- Links -->
+                                    <h6 class="text-uppercase fw-bold mt-4">
+                                        Our Services
+                                    </h6>
+                                    <p>
+                                        <a href="#!" class="text-reset" style="text-decoration: none;">Project
+                                            Management</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset" style="text-decoration: none;">Architecture
+                                            Planning</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset" style="text-decoration: none;">Contractor
+                                            Collaboration</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset" style="text-decoration: none;">Supply Chain
+                                            Solutions</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset" style="text-decoration: none;">Sustainability
+                                            Consulting</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset" style="text-decoration: none;">Client Portal
+                                            Access</a>
+                                    </p>
+                                </div>
+                                <!-- Grid column -->
+
+                                <!-- Grid column -->
+                                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0">
+                                    <!-- Links -->
+                                    <h6 class="text-uppercase fw-bold mt-4">Contact Us</h6>
+                                    <p><i class="fas fa-home me-3"></i>123 Construction Avenue.<br />Building District,
+                                        CA 90210 </p>
+                                    <p>
+                                        <i class="fas fa-envelope me-3 fa-shake"></i>
+                                        info@smartbuildinghub.com
+                                    </p>
+                                    <p><i class="fas fa-phone fa-bounce me-3"></i> +91 7007575886</p>
+                                    <p>Subscribe to our newsletter</p>
+                                    <div class="row">
+                                        <div class="col-sm-10">
+                                            <input type="text" placeholder="E-mail Address"
+                                                style="height: 40px; width: 250px;padding: 5%;">
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button
+                                                style="width: 50px; height: 40px; border: none; background-color:#ef900b ; margin-left:-100px;"><i class="fa-solid fa-arrow-right" style="color: white;"></i></button>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Grid column -->
+                                </div>
+                                <!-- Grid row -->
+                            </div>
+                    </section>
+                    <!-- Section: Links  -->
+                    <div class="row">
+                        <div class="col-sm-9 mx-auto rounded-2 mt-5">
+                            <iframe class="rounded-5"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28458.944042289746!2d80.92663617431641!3d26.92354559999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399957cc00000043%3A0xe946d5cb9b782188!2sSoftpro%20India%20Computer%20Technologies%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1753437562717!5m2!1sen!2sin"
+                                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        </div>
+                    </div>
+                    <hr />
+
+                    <!-- Copyright -->
+                    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                        © 2025-2026 Copyright Smart Build Hub. All Right Reserved. <br /> Website Made With Love By <b
+                            style="color: #ff6900; font-family: Arial, Helvetica, sans-serif;">Sadaf Nisar</b>
+
+                    </div>
+                    <!-- Copyright -->
+                </footer>
+                <!-- Footer -->
+            </div>
+        </div>
+        <!-- footer end -->
+    </div>
+
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+{% block extra-js %} {% endblock %}
+</body>
+
+</html>

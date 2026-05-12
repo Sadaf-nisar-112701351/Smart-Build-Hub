@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+contact Us
+{% endblock %}
+
+{% block main %}
+<!-- contact start -->
+<div class="row" style="margin-top: 13vh;">
+    <div class="col-sm-12 p-0">
+        <img src="{% static 'img/contact.png' %}" alt="" height="400px" width="1520px">
+    </div>
+</div>
+<div class="row  mt-5">
+
+    <div class="col-sm-10 mx-auto  border border-warning border-5 rounded-4 shadow">
+        <div class="row m-4">
+            <div class="col-sm-5">
+                {% if messages %}
+                    {% for m in messages %}
+                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                            {{m}}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+                <form method="post" action="{% url 'contact' %}">
+                    {% csrf_token %}
+                    <h3><b>Contact Now</b></h3>
+
+                    <div class="form-group">
+                        <label for="name"></label>
+                        <input name="name" type="text" class="form-control" id="name" aria-describedby="nameHelp"  placeholder=" Name*">
+                    </div>
+
+                    <div class="form-group">`
+                        <label for="email"></label>
+                        <input name="email" type="email" class="form-control" id="emailaddress"
+                            aria-describedby="emailHelp" placeholder="E-mail*">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactno"></label>
+                        <input name="contactno" type="number" class="form-control" id="contactno"
+                            aria-describedby="numberHelp" placeholder="Phone No.*">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactno"></label>
+                        <input name="subject" type="text" class="form-control" id="contactno"
+                            aria-describedby="numberHelp" placeholder="subject">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="enquiry"></label>
+                        <textarea name="message" type="query" class="form-control" id="enquirytext"
+                            aria-describedby="queryHelp" placeholder="Please enter you enquiry*"></textarea>
+                    </div><br>
+
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-warning" style="width: 100%;">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-7 mt-5">
+                <div class="card-body h-100  shadow">
+
+                    <div class="row">
+                        <div class="col-sm-11 mx-auto">
+                            <h4><b>Contact Info</b></h4>
+                            <i class="fa-brands fa-searchengin"></i><b>Address:</b>
+                            Village - Rampur &nbsp; Post:Kasimpur &nbsp; City:Aligarh
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pincode-225305
+
+                            <br><br>
+                            <i class="fa-solid fa-phone-volume fa-shake"></i>
+                            &nbsp;<b>Phone:</b> 9044554046, 9044554045
+                            <br><br>
+                            <i class="fa-solid fa-square-envelope fa-shake"></i>
+                            &nbsp;<b>Email:</b> sadaf@gmail.com
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+</div>
+<!-- contact end -->
+<div class="col-sm-6"></div>
+
+</div>
+{% endblock %}

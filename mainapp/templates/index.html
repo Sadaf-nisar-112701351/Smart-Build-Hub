@@ -1,0 +1,708 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block main %}
+<div class="row">
+    <div class="col-12 px-0">
+        <div class="background-image3 position-relative">
+            <div
+                class="blur-layer d-flex flex-column justify-content-center align-items-center text-center text-white px-3 py-5">
+                <h4 class="fw-bold">BUILDING TOMORROW TODAY</h4>
+                <h1 class="display-4 fw-bold">
+                    <span class="text-light" data-aos="fade-right" data-aos-delay="300">Transforming</span><span
+                        data-aos="fade-right" data-aos-delay="300" style="color: #ff781a;"> Visions</span><br>
+                    <span class="text-light" data-aos="fade-right">Into</span><span data-aos="fade-right"
+                        data-aos-delay="300" style="color: #ff781a;"> Exceptional</span><br>
+                    <span data-aos="fade-right" data-aos-delay="300">Structures</span>
+                </h1>
+                <p class="mt-3 fs-5" data-aos="fade-right">
+                    With over 25 years of experience, we deliver innovative construction<br>
+                    solutions that exceed expectations and stand the test of time.
+                </p>
+                <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3 mt-4">
+                    <button class="btn text-light rounded-3" style="background-color: #ff6900; width: 200px;"
+                        onclick="scrollDown()">
+                        Get Started >
+                    </button>
+                    <a href="#projects" class="btn text-light rounded-3"
+                        style="background-color: #111423; width: 200px;">
+                        Our Projects >
+                    </a>
+                </div>
+
+                <div class="container mt-5 mb-4">
+                    <div class="row rounded-3 py-4 px-3 text-center" style="background-color: rgba(0, 0, 0, 0.271);">
+                        <div class="col-md-4 text-light" data-aos="fade-up" data-aos-delay="400">
+                            <h2 style="color: #ff6900;">30+</h2>
+                            <p>Years of Experience</p>
+                        </div>
+                        <div class="col-md-4 text-light" data-aos="fade-up" data-aos-delay="500">
+                            <h2 style="color: #ff6900;">250+</h2>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="col-md-4 text-light" data-aos="fade-up" data-aos-delay="600">
+                            <h2 style="color: #ff6900;">98%</h2>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- row2 start -->
+<!-- <div class="row mt-5 mb-5">
+        <div class="col-sm-5 mx-auto rounded-3" style="background-color: rgb(2, 2, 39)">
+            <div class="row mt-3 mx-auto p-1">
+                <div class="col-sm-4 text-light" data-aos="fade-up" data-aos-delay="400">
+                    <b style="font-size: 40px; color: #ff6900;">30+</b><br />Years of Experience
+                </div>
+                <div class="col-sm-4 text-light" data-aos="fade-up" data-aos-delay="500">
+                    <b style="font-size: 40px; color: #ff6900;">250+</b><br />Projects Completed
+
+                </div>
+                <div class="col-sm-4 text-light" data-aos="fade-up" data-aos-delay="500">
+                    <b style="font-size: 40px; color: #ff6900;">98%</b><br />Client Satisfaction
+
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+<!-- row2 end -->
+
+
+</div>
+<!-- row3 start -->
+<div class="row mt-5">
+    <div class="col-sm-10 mx-auto">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="{% static 'img/construction-worker.jpg' %}" data-aos="fade-right" data-aos-delay="300" alt=""
+                    style="height: 500px; width:100%;" class="rounded-3">
+            </div>
+            <div class="col-sm-6" style="color: #ff6900;" data-aos="fade-left" data-aos-delay="300">
+                <h4><b>---About Our Company</h4></b>
+                <b style="font-size: 30px; color: black;">Building Dreams With Excellence & Reliability</b><br /><br />
+                <p style="color: grey;">With decades of industry experience, our team of professional builders and
+                    architects are dedicated to bringing your vision to life.
+                    We handle projects of any scale with meticulous attention to detail and unwavering commitment to
+                    quality.</p>
+                <p style="color: grey;">Professional team of experienced builders and designers</p>
+                <p style="color: grey;">High-quality materials sourced from trusted suppliers</p>
+                <p style="color: grey;">On-time project completion and transparent communication</p><br />
+                <button class="rounded-3 text-light"
+                    style="height: 50px; width: 40%; background-color: #ff6900; border: #ff6900;">Learn More About Us
+                    ></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- row3 end -->
+<!-- row4 start -->
+<div class="row mt-5" style="background-color: #111423;">
+    <div class="col-sm-12 mt-5" data-aos="fade-up" data-aos-delay="100">
+
+        <p class="text-center" style="color: #ff6900;"><b>--PLATFORM FEATURES--</p></b>
+        <p class="text-center" style="color: white; font-size: 40px;"><b>Powerful Tools for Modern Construction
+        </p></b>
+        <p class="text-center" style="color: grey;">Our comprehensive suite of features empowers every
+            stakeholder in
+            the construction process with the tools
+            <br /> they need to succeed.
+        </p>
+        <br />
+        <br />
+
+        <div class="row Platform px-5 mb-5">
+            <div class="col-sm-4">
+                <div class="card mb-3" data-aos="fade-up" data-aos-delay="50" style="width: 28rem; height: 300px;">
+
+                    <div class="card-body">
+                        <i class="fa-solid fa-chart-simple fa-2xl" style="color:#ff6900"></i><br /><br />
+                        <h5 class="card-title"><b>Project Dashboard</h5></b>
+                        <p class="card-text">Centralized hub for tracking progress, milestones,
+                            and resource allocation with
+                            intuitive visualizations.
+                        </p>
+                        <p><i class="fa-solid fa-check" style="color: #ff6900;"></i> Real-time status tracking</p>
+                        <p><i class="fa-solid fa-check" style="color: #ff6900;"></i> Task management system</p>
+                        <p><i class="fa-solid fa-check" style="color: #ff6900;"></i> Budget monitoring</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card mb-3" data-aos="fade-up" data-aos-delay="50" style="width: 28rem; height: 300px;">
+
+                    <div class="card-body">
+                        <i class="fa-solid fa-users fa-2xl" style="color:#ff6900"></i><br /><br />
+
+                        <h5 class="card-title"><b>Team Collaboration</h5></b>
+                        <p class="card-text">Connect all stakeholders in one platform with powerful communication and
+                            file-sharing capabilities.
+                        </p>
+                        <p><i class="fa-solid fa-check" style="color: #ff6900;"></i> Unified messaging system
+                        </p>
+                        <p><i class="fa-solid fa-check" style="color: #ff6900;"></i> Document sharing & approvals</p>
+                        <p><i class="fa-solid fa-check" style="color: #ff6900;"></i> Role-based permissions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card mb-3" data-aos="fade-up" data-aos-delay="50" style="width: 28rem; height: 300px;">
+
+                    <div class="card-body mt-2">
+                        <i class="fa-solid fa-ethernet fa-2xl" style="color: #ff6900;"></i><br /><br />
+                        <h5 class="card-title"><b>3D Visualization</h5></b>
+                        <p class="card-text">Experience your construction project in three dimensions before breaking
+                            ground.
+                        </p>
+                        <p><i class="fa-solid fa-check" style="color: #ff6900;"></i> Interactive models</p>
+                        <p><i class="fa-solid fa-check" style="color: #ff6900;"></i> Virtual walkthroughs
+                        </p>
+                        <p><i class="fa-solid fa-check" style="color: #ff6900;"></i> Design revisions in real-time
+                        </p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+<!-- row4 end -->
+<!-- row5 start -->
+<div class="row">
+    <div class="col-sm-12 mt-5" data-aos="fade-up" data-aos-delay="100">
+        <p class="text-center" style="color: #ff6900;"><b>--OUR SERVICES--</p></b>
+        <p class="text-center" style=" font-size: 40px;"><b>Comprehensive Construction Solutions
+        </p></b>
+        <p class="text-center" style="color: grey;">We offer a wide range of construction services tailored to meet the
+            unique needs of each project,
+            delivered<br /> with exceptional craftsmanship and attention to detail.
+            <br />
+        </p>
+
+    </div>
+</div>
+<!-- row5 end -->
+<!-- row6 start -->
+
+
+<div class="row">
+    <div class="col-sm-4" data-aos="fade-up" data-aos-delay="50">
+        <div class="card text-bg-light  shadow" style="max-width:  30rem; height: 300px;">
+            <div class="icon">
+                <p class="Icon-2 ms-4 mt-4"><span class="ms-1">🏠</span></p>
+            </div>
+            <p class="mt-2  ms-4" style="font-size: 20px;"><b>Residential Construction</p></b>
+            <div class="card-body ">
+                <p class="ms-2">From custom homes to multi-family units, we build comfortable, energy-efficient
+                    residential spaces designed for modern living.</p>
+                <p class="card-text mb-4 ms-2"><span style="color: #ff6900;">Learn More <i
+                            class="fa-solid fa-arrow-right"></i></span></p>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="col-sm-4" data-aos="fade-up" data-aos-delay="50">
+        <div class="card text-bg-light  shadow" style="max-width:  30rem; height: 300px;">
+            <div class="icon">
+                <p class="Icon-2 ms-4 mt-4"><span class="ms-1">🏢</span></p>
+            </div>
+            <p class=" ms-4" style="font-size: 20px;"><b>Commercial Buildings</b></p>
+            <div class="card-body ">
+                <p class="ms-2">Office spaces, retail centers, and industrial facilities built to the highest standards
+                    of quality and functionality.</p>
+                <p class="card-text mb-4 ms-2"><span style="color: #ff6900;">Learn More <i
+                            class="fa-solid fa-arrow-right"></i></span></p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-4" data-aos="fade-up" data-aos-delay="50">
+        <div class="card text-bg-light  shadow" style="max-width:  30rem; height: 300px;">
+            <div class="icon">
+                <p class="Icon-2 ms-4 mt-4"><span class="ms-1">🎨</span></p>
+            </div>
+            <p class=" ms-4" style="font-size: 20px;"><b>Commercial Buildings</b></p>
+
+            <div class="card-body ">
+                <p class="ms-2">Office spaces, retail centers, and industrial facilities built to the highest standards
+                    of quality and functionality.</p>
+                <p class="card-text mb-4 ms-2"><span style="color: #ff6900;">Learn More <i
+                            class="fa-solid fa-arrow-right"></i></span></p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="row mt-4">
+    <div class="col-sm-4" data-aos="fade-up" data-aos-delay="50">
+        <div class="card text-bg-light shadow" style="max-width: 30rem; height: 300px;">
+            <div class="icon">
+                <p class="Icon-2 ms-4 mt-4"><span class="ms-1">🔨</span></p>
+            </div>
+            <p class=" ms-4" style="font-size: 20px;"><b>Renovation & Remodeling</p></b>
+            <div class="card-body">
+                <p class="ms-2">Breathe new life into existing structures with our comprehensive renovation and
+                    remodeling services.</p>
+                <p class="card-text ms-2"><span style="color: #ff6900;">Learn More <i
+                            class="fa-solid fa-arrow-right"></i></span></p>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4" data-aos="fade-up" data-aos-delay="50">
+        <div class="card text-bg-light mb-3 shadow" style="max-width: 30rem; height: 300px;">
+            <div class="icon">
+                <p class="Icon-2 ms-4 mt-4"><span class="ms-1">📐</span></p>
+            </div>
+            <p class="ms-4" style="font-size: 20px;"><b>Architectural Design</b></p>
+            <div class="card-body mb-4">
+                <p class="ms-2">Innovative architectural solutions that balance aesthetics, functionality, and
+                    sustainability.</p>
+                <p class="card-text mb-5 ms-2"><span style="color: #ff6900;">Learn More <i
+                            class="fa-solid fa-arrow-right"></i></span></p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-4" data-aos="fade-up" data-aos-delay="50">
+        <div class="card text-bg-light mb-3 shadow" style="max-width: 30rem; height: 300px;">
+            <div class="icon">
+                <p class="Icon-2 ms-4 mt-4"><span class="ms-1">📋</span></p>
+            </div>
+            <p class="mt-2 ms-4" style="font-size: 20px;"><b>Construction Management</b></p>
+
+            <div class="card-body mb-4">
+                <p class="ms-2">Expert oversight of your project from concept to completion, ensuring efficiency and
+                    quality at every stage.</p>
+                <p class="card-text mb-4 ms-2"><span style="color: #ff6900;">Learn More <i
+                            class="fa-solid fa-arrow-right"></i></span></p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- row6 end -->
+
+<!-- Featured Construction Projects start -->
+
+<div class="row mt-5" id="projects" style="background-color: #161f2f; height: 850px;">
+    <div class="col-sm-10 mx-auto">
+        <div class="row">
+            <div class="col-sm-6 mt-5">
+                <span style="color: #ff6900; font-weight: bold; margin-left: 100px;">
+                    <p>----OUR PROJECTS----</p>
+                </span>
+                <span style="color: white; font: size 50px;">
+                    <h2><b>Featured Construction Projects</h2></b>
+                </span>
+                <span style="color: grey; text-align: justify;">
+                    <p>Take a look at some of our most impressive projects, showcasing our commitment to quality,
+                        innovation, and excellence in construction.</p>
+                </span>
+
+            </div>
+            <div class="col-sm-6">
+
+                <button type="button" class="btn btn-outline-warning"
+                    style="margin-top: 120px; margin-left: 400px; height: 50px; width: 200px;">View All Project
+                    ></button>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-12 mx-auto">
+                <div class="row">
+                    <div class="col-sm-4 mt-5">
+                        <div class="card text-bg-dark">
+                            <img src="{% static 'img/moc.jpg'%}" class="card-img" alt="..." height="260px"
+                                style="border-radius: 15px;">
+                            <div class="card-img-overlay">
+                                <span>
+                                    <p class="card-text" style="margin-top: 40%; color: red; font-weight: bold; ">
+                                        Commercial</p>
+                                    <h5 class="card-title">Modern Office Complex</h5>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 mt-5">
+                        <div class="card text-bg-dark">
+                            <img src="{% static 'img/37.jpg'%}" class="card-img" alt="..." height="260px"
+                                style="border-radius: 15px;">
+                            <div class="card-img-overlay">
+                                <span>
+                                    <p class="card-text" style="margin-top: 40%; color: red; font-weight: bold;">
+                                        Residential</p>
+                                    <h5 class="card-title">Luxury Residential Tower</h5>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 mt-5">
+                        <div class="card text-bg-dark">
+                            <img src="{% static 'img/39.jpg'%}" class="card-img" alt="..." height="260px"
+                                style="border-radius: 15px;">
+                            <div class="card-img-overlay">
+                                <span>
+                                    <p class="card-text" style="margin-top: 40%; color: red; font-weight: bold;">
+                                        Public</p>
+                                    <h5 class="card-title">Sustainable Community Center</h5>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 mt-5">
+                        <div class="card text-bg-dark">
+                            <img src="{% static 'img/40.jpg'%}" class="card-img" alt="..." height="260px"
+                                style="border-radius: 15px;">
+                            <div class="card-img-overlay">
+                                <span>
+                                    <p class="card-text" style="margin-top: 40%; color: red; font-weight: bold;">
+                                        <small>Industrial</small>
+                                    </p>
+                                    <h5 class="card-title">Industrial Manufacturing Hub</h5>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 mt-5">
+                        <div class="card text-bg-dark">
+                            <img src="{% static 'img/41.jpg'%}" class="card-img" alt="..." height="260px"
+                                style="border-radius: 15px;">
+                            <div class="card-img-overlay">
+                                <span>
+                                    <p class="card-text" style="margin-top: 40%; color: red; font-weight: bold;">
+                                        Hospitality</p>
+                                    <h5 class="card-title">Waterfront Hotel & Spa</h5>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 mt-5">
+                        <div class="card text-bg-dark">
+                            <img src="{% static 'img/42.jpg'%}" class="card-img" alt="..." height="260px"
+                                style="border-radius: 15px;">
+                            <div class="card-img-overlay">
+                                <span>
+                                    <p class="card-text" style="margin-top: 40%; color: red; font-weight: bold;">
+                                        Mixed-Use</p>
+                                    <h5 class="card-title">Urban Mixed-Use Development</h5>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+</div>
+
+<!-- Featured Construction Projects end -->
+
+<!-- Smart build hub project start -->
+
+<div class="row mt-5" style="margin-top: 20px;" id="SmartBuild">
+    <div class="col-sm-10 mx-auto">
+        <span style="text-align: center; color: #ff6900; font-weight: bolder;">
+            <p>----OUR PROCESS
+                ----</p>
+            <h1 style="color: #161f2f; "><b>How SmartBuild Hub Works</h1></b>
+        </span>
+        <p style="color: grey;" class="text-center">Our innovative platform transforms the construction journey from
+            concept to completion
+            through an<br /> intuitive digital workflow that connects all stakeholders.</p>
+        <div class="row py-5">
+            <div class="col-sm-3">
+                <div class="card"
+                    style="width: 275px; height: 300px; border-radius: 10px; box-shadow: -10px -10px 10px;">
+                    <i class="fa-solid fa-book-open fa-3x"
+                        style="color: #ff6900; margin-left: 30px; margin-top: 30px;"></i>
+                    <div class="card-body" id="box">
+                        <h5 class="card-title">Project Planning</h5>
+                        <p class="card-text" style="text-align:left;">Create your vision with our intuitive tools.
+                            Define requirements, set budgets, and establish timelines in a collaborative environment.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card"
+                    style="width: 275px; height: 300px;  border-radius: 10px; box-shadow: -10px -10px 10px;">
+                    <i class="fa-solid fa-layer-group fa-3x"
+                        style="color: #ff6900; margin-left: 30px; margin-top: 30px;"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Team Assembly</h5>
+                        <p class="card-text" style="text-align:left;">Connect with architects, contractors, and
+                            suppliers through our verified network to build your ideal construction team.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card"
+                    style="width: 275px; height: 300px;  border-radius: 10px; box-shadow: -10px -10px 10px;">
+                    <i class=" fa-solid fa-shield-halved fa-3x"
+                        style="color: #ff6900; margin-left: 30px; margin-top: 30px;"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Project Execution</h5>
+                        <p class="card-text" style="text-align:left;">Monitor progress in real-time, approve changes
+                            instantly, and maintain clear communication throughout construction.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card"
+                    style="width: 275px; height: 300px;  border-radius: 10px; box-shadow: -10px -10px 10px;"">
+                    <i class=" fa-solid fa-circle-check fa-3x"
+                    style="color: #ff6900; margin-left: 30px; margin-top: 30px;"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Project Completion</h5>
+                        <p class="card-text" style="text-align:left;">Receive comprehensive documentation, warranty
+                            information, and maintenance schedules for your new construction.</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</div>
+
+<!-- Smart build hub project end -->
+
+<!-- What Our Clients Say start -->
+<hr />
+<div class="row mt-5" id="clientpic" style="height: 600px;">
+    <div class="col-sm-10 mx-auto">
+        <span style=" text-align: center; color: #ff6900;">
+            <p style="margin-top: 10px; "> ----- TESTIMONIALS ------
+            </p>
+            <h1 style="color: #97bf3b;">What Our Clients Say</h1>
+            <p>Read testimonials from our satisfied clients who have experienced our dedication to quality, reliability,
+                and excellence in construction.</p>
+        </span>
+        <div class="row mt-5">
+            <div class="col-sm-4">
+                <div class="card" style="width: 350px; box-shadow: -10px 10px 10px;">
+                    <p style="margin-left: 30px; margin-top: 20px;">⭐⭐⭐⭐⭐</p>
+
+                    <div class="card-body">
+                        <p class="card-text">"Working with this construction team was a fantastic experience. Their
+                            attention to detail and commitment to quality exceeded our expectations. They completed our
+                            project on time and within budget."</p>
+                        <div class="row">
+                            <div class="c0l-sm-12">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <img src="{% static 'img/3.png'%}" class="card-img-top" alt="..." style="width: 60px; height: 60px;
+                            border-radius: 50%;">
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <p><span style="font-weight: bolder;">Sarah Johnson</span> <br> Property
+                                            Developer</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 350px; box-shadow: -10px 10px 10px;">
+                    <p style="margin-left: 30px; margin-top: 20px;">⭐⭐⭐⭐⭐</p>
+
+                    <div class="card-body">
+                        <p class="card-text">"I'm extremely impressed with the professionalism and expertise
+                            demonstrated throughout our office building project. The team was responsive, transparent,
+                            and delivered exceptional results."</p>
+                        <div class="row">
+                            <div class="c0l-sm-12">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <img src="{% static 'img/36.jpg'%}" class="card-img-top" alt="..." style="width: 60px; height: 60px;
+                            border-radius: 50%;">
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <p><span style="font-weight: bolder;">Michael Thompson</span> <br> Business
+                                            Owner</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 350px; box-shadow: -10px 10px 10px;">
+                    <p style="margin-left: 30px; margin-top: 20px;">⭐⭐⭐⭐⭐</p>
+
+                    <div class="card-body">
+                        <p class="card-text">"Our home renovation was handled with such care and precision. The team
+                            listened to our needs, offered creative solutions, and transformed our space beyond what we
+                            could have imagined."</p>
+                        <div class="row">
+                            <div class="c0l-sm-12">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <img src="{% static 'img/47.jpg'%}" class="card-img-top" alt="..." style="width: 60px; height: 60px;
+                            border-radius: 50%;">
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <p><span style="font-weight: bolder;">Emily Rodriguez</span> <br> Homeowner</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- What Our Clients Say end-->
+
+
+<!-- dream project start -->
+<div class="row" style="height: 500px; background-color: #ff6900;" id="rowpic2">
+    <div class="col-sm-10 mx-auto">
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="card"
+                    style="height: 170px; width: 230px; margin-top: 70px; text-align: center; background-color: #ff781a; ">
+                    <i class="fa-regular fa-house fa-2x"
+                        style="margin-left: 100px; margin-top: 20px; color: white;"></i>
+                    <br>
+                    <p style="font-weight: bolder; color: white;"><span
+                            style="font-size: larger; color: white;">500+</span>
+                        <br>
+                        project completed
+                    </p>
+
+                </div>
+                <div class="card" style="height: 170px; width: 230px; margin-top: 30px;  text-align: center;
+                background-color: #ff781a;"><i class="fa-regular fa-calendar fa-2x"
+                        style="margin-left: 100px; margin-top: 20px; color: white;"></i>
+                    <br>
+                    <p style="font-weight: bolder; color: white;"><span
+                            style="font-size: larger; color: white;">25+</span>
+                        <br>
+                        Years of Experience
+                    </p>
+
+                </div>
+
+
+            </div>
+            <div class="col-sm-2">
+
+                <div class="card"
+                    style="height: 170px; width: 230px; margin-top: 70px; margin-left: 50px; text-align: center; background-color: #ff781a;">
+                    <i class="fa-regular fa-face-smile fa-2x"
+                        style="margin-left: 100px; margin-top: 20px; color: white;"></i>
+                    <br>
+                    <p style="font-weight: bolder; color: white;"><span style="font-size: larger; ;">120+</span>
+                        <br>
+                        Expert Team Members
+                    </p>
+
+                </div>
+                <div class="card"
+                    style="height: 170px; width: 230px; margin-top: 30px; margin-left: 50px; text-align: center; background-color: #ff781a;">
+                    <i class="fa-regular fa-clock fa-2x"
+                        style="margin-left: 100px; margin-top: 20px; color: white;"></i>
+                    <br>
+                    <p style="font-weight: bolder; color: white;"><span style="font-size: larger; ;">98%</span>
+                        <br>
+                        On-Time Completion
+                    </p>
+
+                </div>
+
+
+
+
+            </div>
+            <div class="col-sm-6 " style="margin-left: 150px; margin-top: 80px;">
+                <span style="color: white;">
+                    <h1><b>Ready to Build Your Dream Project?</h1></b>
+                    <p style="color:whitesmoke; font-size: 20px;">Let's discuss how we can bring your vision to life
+                        with our expertise in
+                        construction and design.</p>
+                </span>
+                <button type="button" class="btn btn-light" style="height: 50px; color: #ff781a;">Get Free Estimate >
+                </button>
+                <button type="button" class="btn btn-outline-warning"
+                    style="margin-left: 20px; width: 200px; height: 50px; color: aliceblue;">Contact Us ></button>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- dream project end -->
+
+<script>
+    function scrollDown() {
+        window.scrollBy({
+            top: 700,
+            behavior: 'smooth'
+        });
+    }
+</script>
+
+
+{% endblock %}

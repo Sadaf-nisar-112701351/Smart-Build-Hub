@@ -1,0 +1,33 @@
+{% extends 'contractorbase.html' %}
+{% block contractor %}
+<h3 class="text-center">Project Application</h3>
+<div class="row">
+    <div class="col-sm-10 card mx-auto mt-3 p-5" style="background-color: lightcyan;">
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="pro" class="form-label">Proposal Text</label>
+                <textarea name="proposal_text" id="pro" class="form-control"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="design" class="form-label">Upload Design File</label>
+                <input type="file" name="design_file" id="design" class="form-control" required>
+            </input>
+            </div>
+            <div class="mb-3">
+                <label for="budget" class="form-label">Estimated Budget</label>
+                <input type="number" name="estimated_budget" step="0.01" id="budget" class="form-control" required>
+            </input>
+            </div>
+            <div class="mb-3">
+                <label for="duration" class="form-label">Estimated Duration</label>
+                <input type="number" name="estimated_duration" id="duration" class="form-control" required>
+            </input>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

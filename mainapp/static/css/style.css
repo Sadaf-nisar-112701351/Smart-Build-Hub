@@ -1,0 +1,92 @@
+body{
+    overflow-x: hidden;
+}
+
+.bgimagecls{
+    background-image: url('img/36.png');
+}
+
+.Icon-2{
+  font-size: 36px; 
+  background-color: rgba(255, 166, 0, 0.382); 
+  width: 56px;
+  height:56px;
+  border-radius: 10px;
+}
+.Icon-2:hover{
+    background-color: orange;
+}
+
+.Platform{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.transparent
+{
+    background-image: url('../img/backg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+
+    
+     
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.background-image3 {
+     background-image: url('../img/backg.jpg'); /* Replace with actual image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;    
+    position: relative;
+    margin-top: 6vh;
+    padding-top:50px;
+}
+
+.blur-layer {
+    background: rgba(0, 0, 0, 0.6); /* dark blur */
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    padding: 50px 15px;
+}
+
+@media (max-width: 768px) {
+    .blur-layer h1 {
+        font-size: 2rem;
+    }
+
+    .blur-layer p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        width: 100% !important;
+        
+    }
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.backhome{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.backhome:hover{
+    color: navy;
+}

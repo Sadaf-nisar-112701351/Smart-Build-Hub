@@ -1,0 +1,36 @@
+{% extends 'contractorbase.html' %}
+
+{% block contractor %}
+
+<h2 class="text-center" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Contractor Profile</h2>
+
+<div class="row">
+    <div class="col-sm-4 mx-auto">
+        <div class="card mt-3" style="box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); background-color: lightgrey;">
+            <div class="card-header text-center">
+                {% if contractor.picture %}
+                <img src="{{contractor.picture.url}}" alt="" height="100px" width="100px" class="border rounded-circle">
+                {% else %}
+                <img src="" alt="" height="100px" width="100px" class="border rounded-circle"/>
+                {% endif %}
+            </div>
+            <div class="card-body">
+                <h4>{{name}}</h4>
+                <p>
+                    <span>Contact no: {{contractor.contactno}}</span>
+                    <br/>
+                    Email Address : {{contractor.email}}
+                    <br/>
+                    Address : {{contractor.address}}
+                    <br/>
+                    Bio : {{contractor.bio}}
+                </p>
+            </div>
+            <div class="card-footer text-center">
+                <a href="{% url 'contractoredit' %}" class="btn btn-success">Update Profile</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

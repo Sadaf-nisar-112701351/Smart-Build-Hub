@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Register
+{% endblock %}
+
+{% block main %}
+<!-- registration start -->
+<div class="row  mt-5">
+    <h1 class="text-center mb-2" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin-top: 13vh;">
+        Registration Page</h1>
+    {% if messages %}
+    {% for m in messages %}
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        {{m}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
+    {% endif %}
+    <div class="col-sm-10 mx-auto  border border-warning border-5 rounded-4 shadow">
+        <div class="row m-4">
+            <div class="col-sm-6">
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="text" class="form-label">Name</label>
+                            <input type="text" name="name" class="form-control" placeholder="Name"
+                                aria-label="First name" required>
+                        </div>
+                    </div>
+                    <br/>
+
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control" id="inputEmail4" required>
+                    </div>
+                    <br/>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Password</label>
+                        <input type="password" name="password" class="form-control" id="inputPassword4" required>
+                    </div>
+                    <br/>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Contact No</label>
+                        <input type="cn" name="contactno" class="form-control" id="inputAddress" placeholder=""
+                            required>
+                    </div>
+                    <br/>
+                    <div class="col-md-4">
+                        <!-- <label for="utype" class="form-select">User Type</label> -->
+                        <select name ="usertype" class="form-select" required>
+                            <option selected disabled>Choose...</option>
+                            <option value="homeowner">Home Owner</option>
+                            <option value="contractor">Contractor</option>
+                        </select> 
+                    </div>
+                    <br/>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-outline-warning">Sign in</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-6">
+                <div class="card h-100 border-warning border-4 rounded-4 shadow bg-warning">
+                    <img src="{% static 'img/regis.png' %}" class="d-block w-100 rounded-4" alt="" height="100%"
+                        class="rounded-4">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- registration end -->
+{% endblock %}

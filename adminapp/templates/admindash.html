@@ -1,0 +1,167 @@
+{%extends 'adminbase.html'%}
+{% load static%}
+{% block style%}
+
+<style>
+  :root{
+    --adarsh : #8688ff;
+    --boadar: 2px solid #6f71d6 ;
+    --viewbac:  #7677c88b; 
+    --viewbachov:  #5658edc3; 
+  }
+#headingtop{
+  color: var(--adarsh);
+  /* background-color: ; */
+  border-bottom:var(--boadar) ;
+  padding: 10px 0px;
+}
+#view{
+ padding: 5px 20px; 
+ border-radius: 7px 7px;
+background-color: var(--viewbac);
+color: black;
+}
+#view:hover{
+  color:var(--viewbachov) ;
+}
+#house{
+  color: var(--adarsh);
+  /* background-color: ; */
+  border-bottom:var(--boadar) ;
+  padding: 10px 0px;
+}
+</style> 
+{%endblock%}
+{% block admin%}
+<div class="row">
+  <div class="col-sm-8">
+    <div class="card mb-3 rounded-3">
+      <div class="row g-0">
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title" id="headingtop">Congratulation<span class="fs-3">🎉</span></h5>
+            <p class="card-text mb-5">
+              Your have completed 72% of your project<br>
+              Check your Project progress here..
+            </p>
+            <a href="" id="view">View</a>
+          </div>
+        </div>
+        <div class="col-md-4 text-end">
+          <img src="{% static '/img/man-with-laptop.png'%}" alt="" height="180px">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2">
+    <div class="card rounded-3">
+      <div class="card-body">
+        <h5 class="card-title" id="house">Houseowners</h5>
+        <h3>{{th}}</h3>
+        <p> Check the Details of Houseowners..</p>
+        <a href="#" id="view">View</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2">
+    <div class="card rounded-3">
+      <div class="card-body">
+        <h5 class="card-title" id="house">Contractors</h5>
+        <h3>{{tc}}</h3>
+        <p class="card-text"> Check the Details of Contractors..</p>
+        <a href="#" id="view">View</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-8">
+    <div class="card  mb-3">
+      <div class="card-body">
+        <h5 class="card-title text-center" id="house">Ongoing Projects</h5>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="progress mt-2" style="height: 20px;" role="progressbar" aria-label="Success example" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar text-bg-success" style="width: 25%">25%</div>
+            </div>
+            <h6 class="text-center mt-1"> Project 1</h6>
+          </div>
+          <div class="col-sm-12">
+            <div class="progress mt-1" style="height: 20px;" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar text-bg-info" style="width: 50%">50%</div>
+            </div>
+            <h6 class="text-center mt-1">Project 2</h6>
+          </div>
+          <div class="col-sm-12">
+            <div class="progress mt-1" style="height: 20px;" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar text-bg-warning" style="width: 75%">75%</div>
+            </div>
+            <h6 class="text-center mt-1">Project 3</h6>
+          </div>
+          <div class="col-sm-12">
+            <div class="progress mt-1" style="height: 20px;" role="progressbar" aria-label="Danger example" aria-valuenow="100"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar text-bg-danger" style="width: 100%">100%</div>
+            </div>
+            <h6 class="text-center mt-1">Project 4</h6>
+          </div>
+        </div>
+
+        <a href="#" id="view">View all project</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="row">
+      <div class="col-sm-6">
+         <div class="card rounded-3">
+      <div class="card-body px-2">
+        <h5 class="card-title" id="house">Completed Projects</h5>
+        <h3>{{tp}}</h3>
+        <p> Check the Details of Completed Projects..</p>
+        <a href="#" id="view">View</a>
+      </div>
+    </div>
+      </div>
+      <div class="col-sm-6">
+         <div class="card rounded-3">
+      <div class="card-body">
+        <h5 class="card-title" id="house">Total Projects</h5>
+        <h3>{{trp}}</h3>
+        <p> Check the Details of Total Projects..</p>
+        <a href="#" id="view">View</a>
+      </div>
+    </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-12">
+         <div class="card rounded-3">
+      <div class="card-body">
+        <h5 class="card-title" id="house">Recent Enquiries</h5>
+        <h3>{{enqs}}</h3>
+        <p> Check the Enquiries..</p>
+        <a href="#" id="view">View</a>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="row">
+  <div class="col-sm-12">
+    <div class="card rounded-3">
+      <div class="card-body">
+        <h5 class="card-title">Recent Enquiries</h5>
+        <h3>5</h3>
+        <p> Check the Enquiries..</p>
+        <a href="#">View</a>
+      </div>
+    </div>
+  </div>
+</div> -->
+{% endblock%}

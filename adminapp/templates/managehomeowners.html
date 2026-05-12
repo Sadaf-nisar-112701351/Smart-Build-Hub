@@ -1,0 +1,39 @@
+{% extends 'adminbase.html' %}
+{% block admin %}
+<div class="row">
+    <div class="col-sm-12">
+        <h4>Manage Homeowners</h4>
+        <table class="table">
+        <tr>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>Contact No</th>
+            <th>Email</th>
+            <th>Picture</th>
+            <th>Address</th>
+            <th>Actions</th>
+
+        </tr>
+        {% for h in homeowners %}
+        <tr>
+            <td>{{forloop.counter}}</td>
+            <td>{{h.name}}</td>
+            <td>{{h.contactno}}</td>
+            <td>{{h.email}}</td>
+            <td>
+                {% if h.picture %}
+                <img src="{{h.picture.url}}" alt="" height="80px">
+                {% else %}
+                No Profile
+                {% endif %}
+            </td>
+            <td>{{h.address}}</td>
+            <td>
+                <a href="" class="btn btn-danger">Block</a>
+            </td>
+        </tr>
+        {% endfor %}
+        </table>
+    </div>
+</div>
+{% endblock %}

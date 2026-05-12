@@ -1,0 +1,316 @@
+{% extends 'homeownerbase.html' %}
+
+{% block homeowner %}
+
+<link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<div class="p-6 bg-gray-100 min-h-screen">
+
+    <!-- Welcome Section -->
+    <div class="bg-gradient-to-r from-cyan-700 to-teal-500 rounded-3xl p-8 text-white shadow-2xl"
+         data-aos="fade-down">
+
+        <div class="flex flex-col md:flex-row justify-between items-center">
+
+            <div>
+                <h1 class="text-4xl font-bold">
+                    Welcome Homeowner 👋
+                </h1>
+
+                <p class="mt-3 text-lg text-gray-100">
+                    Manage your construction projects smartly with Smart Build Hub.
+                </p>
+            </div>
+
+            <div class="mt-6 md:mt-0">
+                <button class="bg-white text-cyan-700 px-6 py-3 rounded-xl font-bold shadow-lg hover:scale-105 transition duration-300">
+                    + Post New Project
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+
+   <!-- Dashboard Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+
+    <!-- CARD 1 -->
+    <div class="bg-gradient-to-br from-cyan-500 to-cyan-700 
+    rounded-3xl p-6 shadow-2xl 
+    hover:scale-105 hover:-translate-y-2 
+    transition-all duration-500 
+    cursor-pointer group text-white"
+    data-aos="zoom-in">
+
+        <div class="flex justify-between items-center">
+
+            <div>
+                <p class="text-lg opacity-90">
+                    Total Projects
+                </p>
+
+                <h2 class="text-5xl font-bold mt-3">
+                    12
+                </h2>
+            </div>
+
+            <div class="bg-white/20 backdrop-blur-lg 
+            p-5 rounded-full 
+            group-hover:rotate-12 group-hover:scale-110 
+            transition-all duration-500">
+
+                <i class="fa-solid fa-diagram-project text-4xl"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- CARD 2 -->
+    <div class="bg-gradient-to-br from-orange-400 to-red-500 
+    rounded-3xl p-6 shadow-2xl 
+    hover:scale-105 hover:-translate-y-2 
+    transition-all duration-500 
+    cursor-pointer group text-white"
+    data-aos="zoom-in"
+    data-aos-delay="100">
+
+        <div class="flex justify-between items-center">
+
+            <div>
+                <p class="text-lg opacity-90">
+                    Ongoing
+                </p>
+
+                <h2 class="text-5xl font-bold mt-3">
+                    5
+                </h2>
+            </div>
+
+            <div class="bg-white/20 backdrop-blur-lg 
+            p-5 rounded-full 
+            group-hover:scale-110 
+            transition-all duration-500">
+
+                <i class="fa-solid fa-person-digging text-4xl"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- CARD 3 -->
+    <div class="bg-gradient-to-br from-green-400 to-emerald-600 
+    rounded-3xl p-6 shadow-2xl 
+    hover:scale-105 hover:-translate-y-2 
+    transition-all duration-500 
+    cursor-pointer group text-white"
+    data-aos="zoom-in"
+    data-aos-delay="200">
+
+        <div class="flex justify-between items-center">
+
+            <div>
+                <p class="text-lg opacity-90">
+                    Completed
+                </p>
+
+                <h2 class="text-5xl font-bold mt-3">
+                    7
+                </h2>
+            </div>
+
+            <div class="bg-white/20 backdrop-blur-lg 
+            p-5 rounded-full 
+            group-hover:rotate-180 
+            transition-all duration-700">
+
+                <i class="fa-solid fa-circle-check text-4xl"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- CARD 4 -->
+    <div class="bg-gradient-to-br from-pink-500 to-purple-700 
+    rounded-3xl p-6 shadow-2xl 
+    hover:scale-105 hover:-translate-y-2 
+    transition-all duration-500 
+    cursor-pointer group text-white"
+    data-aos="zoom-in"
+    data-aos-delay="300">
+
+        <div class="flex justify-between items-center">
+
+            <div>
+                <p class="text-lg opacity-90">
+                    Notifications
+                </p>
+
+                <h2 class="text-5xl font-bold mt-3">
+                    9
+                </h2>
+            </div>
+
+            <div class="bg-white/20 backdrop-blur-lg 
+            p-5 rounded-full 
+            group-hover:animate-bounce">
+
+                <i class="fa-solid fa-bell text-4xl"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+    <!-- Project Table -->
+    <div class="bg-white rounded-3xl shadow-2xl mt-10 p-8"
+         data-aos="fade-up">
+
+        <div class="flex justify-between items-center mb-6">
+
+            <h2 class="text-3xl font-bold text-gray-700">
+                Recent Projects
+            </h2>
+
+            <button class="bg-cyan-700 hover:bg-cyan-800 text-white px-5 py-3 rounded-xl shadow-lg transition duration-300">
+                View All
+            </button>
+
+        </div>
+
+
+        <div class="overflow-x-auto">
+
+            <table class="w-full">
+
+                <thead>
+
+                    <tr class="bg-gray-100 text-gray-700">
+
+                        <th class="p-4 text-left">Project</th>
+                        <th class="p-4 text-left">Location</th>
+                        <th class="p-4 text-left">Budget</th>
+                        <th class="p-4 text-left">Status</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr class="border-b hover:bg-gray-50">
+
+                        <td class="p-4">Modern Villa</td>
+                        <td class="p-4">Lucknow</td>
+                        <td class="p-4">₹25,00,000</td>
+
+                        <td class="p-4">
+                            <span class="bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full text-sm font-bold">
+                                Ongoing
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <tr class="border-b hover:bg-gray-50">
+
+                        <td class="p-4">Apartment Renovation</td>
+                        <td class="p-4">Delhi</td>
+                        <td class="p-4">₹8,50,000</td>
+
+                        <td class="p-4">
+                            <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-bold">
+                                Completed
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <tr class="hover:bg-gray-50">
+
+                        <td class="p-4">Kitchen Remodeling</td>
+                        <td class="p-4">Noida</td>
+                        <td class="p-4">₹3,20,000</td>
+
+                        <td class="p-4">
+                            <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-bold">
+                                Pending
+                            </span>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <!-- Chart Section -->
+    <div class="bg-white rounded-3xl shadow-2xl mt-10 p-8"
+         data-aos="fade-up">
+
+        <h2 class="text-3xl font-bold text-gray-700 mb-8">
+            Project Progress
+        </h2>
+
+        <canvas id="projectChart"></canvas>
+
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+
+AOS.init();
+
+const ctx = document.getElementById('projectChart');
+
+new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Villa', 'Renovation', 'Kitchen', 'Office'],
+        datasets: [{
+            label: 'Project Completion %',
+            data: [90, 70, 50, 30],
+            borderWidth: 1
+        }]
+    },
+
+    options: {
+        responsive: true
+    }
+});
+
+</script>
+
+{% endblock %}
